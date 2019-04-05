@@ -1,0 +1,11 @@
+version: '3'
+services:
+  zoo1:
+    build:
+      context: .
+      dockerfile: jupyter.Dockerfile
+    volumes:
+      - ./data/:/home/jovyan/data
+      - ./notebooks/:/home/jovyan/notebooks
+    ports:
+      - 2181:2181
