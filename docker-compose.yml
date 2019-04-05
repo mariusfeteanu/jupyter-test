@@ -6,6 +6,6 @@ services:
       dockerfile: jupyter.Dockerfile
     volumes:
       - ./data/:/home/jovyan/data
-      - ./notebooks/:/home/jovyan/notebooks
+      - ./notebooks/:/home/jovyan/work
     ports:
-      - 2181:2181
+      - 8888:8888
